@@ -1,0 +1,12 @@
+{
+  "name": "webdevelopersrinu",
+  "description": "Claude plugin that designs social media posters with a real human touch",
+  "owner": { "name": "srinu desetti" },
+  "plugins": [
+    {
+      "name": "poster-design",
+      "source": "./",
+      "description": "Designs social media posters with a real human touch — bold brand colors, asymmetric layouts, photo-dominant compositions — not AI-looking gradients and centered heroes"
+    }
+  ]
+}
