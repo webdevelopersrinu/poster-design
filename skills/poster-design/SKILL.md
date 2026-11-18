@@ -42,6 +42,31 @@ layout recipe matching the poster type.
    the perfect match." "Message us to order." "Tell us in the comments."
    No emoji in copy, no "Unlock", no "Elevate", no "✨".
 
+## Build rules (HTML/CSS posters) — defects seen in testing, never repeat them
+
+- **Headline fits in 2 lines, 3 max.** Size the font so the longest word fits
+  the column (`clamp` or just measure). Never let "&" or a short word sit on
+  its own line — keep "Laundry & Dry" together, break before the noun.
+  Exception: engagement posters (recipe 5) use a deliberate one-word-per-line
+  giant stack ("WHAT'S / YOUR / HOT / TAKE?") — there, stack away.
+- **No element collisions.** Lay out the text column as one flex column with
+  explicit `gap`; only stickers/badges/logo may be absolutely positioned.
+  CTA and contact strip get their own space — nothing touches or overlaps text.
+- **Icons are inline SVG, never emoji.** Emoji (✆ 🌐 ☎) render as broken
+  tofu/tiny glyphs in headless renders and across platforms. Use 3–4 line
+  inline SVGs for phone/globe/pin/star; ✓ as text is fine.
+- **Photo selection matters as much as layout.** Pick bright, well-lit photos
+  with a person doing the thing (folding clothes, handing a package, smiling at
+  camera) or a clean hero product on simple background. Reject dim, grainy,
+  cluttered, or back-of-machine shots. Unsplash search terms: add "smiling",
+  "bright", "studio" to the subject.
+- **Echo the cut.** A diagonal/curve separating photo and color block looks
+  more designed with a 10–16px white (or accent) border stripe along the cut,
+  or a second offset shape behind it.
+- **Spacing rhythm:** 48–56px canvas padding, 24–36px between content groups,
+  one deliberate breathing gap before the CTA. If the column feels full, cut a
+  checklist item — don't shrink gaps.
+
 ## Process
 
 1. Ask (or infer) three things: business type, the one brand color, and the
