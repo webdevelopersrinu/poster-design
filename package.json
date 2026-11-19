@@ -1,0 +1,11 @@
+{
+  "name": "poster-design",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/render.test.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.57.0"
+  }
+}

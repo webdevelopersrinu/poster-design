@@ -75,6 +75,9 @@ layout recipe matching the poster type.
 3. Pick fonts per rule 4 (Google Fonts, pinned, with fallback stack).
 4. Build at the right canvas: 1080×1080 (IG post), 1080×1350 (portrait),
    1200×630 (FB/link). HTML/CSS poster → fixed-size container, export-ready.
+   Export/preview with `node scripts/render.mjs poster.html out.png --size ig`
+   (`ig`/`portrait`/`fb` or `WxH`; `--scale 2` for retina). It warns if the
+   page overflows the canvas — fix the layout, don't ignore the warning.
 5. Self-check against `references/refs/` before delivering: would this sit
    unnoticed next to those examples? If it has a gradient background, centered
    stack, or glow — redo it.
